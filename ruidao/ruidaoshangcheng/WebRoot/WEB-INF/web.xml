@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<filter>
+	<filter-name>encodingFilter</filter-name>
+	<filter-class>
+		com.rd.web.filter.EncodingFilter
+	</filter-class>
+	<init-param>
+		<param-name>encoding</param-name>
+		<param-value>UTF-8</param-value> 
+	</init-param>
+</filter>
+
+<filter-mapping>
+	<filter-name>encodingFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+</filter-mapping>
+
+	
+	
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Yanzhenma</servlet-name>
+    <servlet-class>com.rd.web.servlet.Yanzhenma</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckImg</servlet-name>
+    <servlet-class>com.rd.web.servlet.CheckImg</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckUsername</servlet-name>
+    <servlet-class>com.rd.web.servlet.CheckUsername</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckSellerUsenameServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.CheckSellerUsenameServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckContraller</servlet-name>
+    <servlet-class>com.rd.web.servlet.CheckContraller</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterUserServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.RegisterUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SendMessage</servlet-name>
+    <servlet-class>com.rd.web.servlet.SendMessage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SellerproductServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.SellerproductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContrallerServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.ContrallerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SellerServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.SellerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Index</servlet-name>
+    <servlet-class>com.rd.web.servlet.Index</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.ProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.CartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Dianpushouye</servlet-name>
+    <servlet-class>com.rd.web.servlet.Dianpushouye</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.rd.web.servlet.SearchServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+ 
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Yanzhenma</servlet-name>
+    <url-pattern>/yanzhengma</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckImg</servlet-name>
+    <url-pattern>/checkimg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckUsername</servlet-name>
+    <url-pattern>/checkusername</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckSellerUsenameServlet</servlet-name>
+    <url-pattern>/checkseller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckContraller</servlet-name>
+    <url-pattern>/checkcontraller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterUserServlet</servlet-name>
+    <url-pattern>/registerservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SendMessage</servlet-name>
+    <url-pattern>/sendmessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SellerproductServlet</servlet-name>
+    <url-pattern>/sellerproductservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContrallerServlet</servlet-name>
+    <url-pattern>/contrallerservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SellerServlet</servlet-name>
+    <url-pattern>/sellerservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Index</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/productservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/username</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/cartservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Dianpushouye</servlet-name>
+    <url-pattern>/dianpushouye</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/orderservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/searchservlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+</web-app>
